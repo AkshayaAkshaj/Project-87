@@ -14,11 +14,11 @@ function new_image(get_image)
 		block_image_object = Img;
 
 		block_image_object.scaleToWidth(block_image_width);
-		block_image_object.sacleToHeight(block_image_height);
+		block_image_object.scaleToHeight(block_image_height);
 		block_image_object.set({
 			top:block_y,
 			left:block_x
-		})
+		});
 		canvas.add(block_image_object);
 	});
 }
@@ -32,7 +32,7 @@ console.log(keyPressed);
 
 	if(keyPressed == '82') 
 	{
-		new_image('rr.jpg');
+		new_image('rr1.png');
         console.log("r");
 	}
 	if(keyPressed == '71')
@@ -56,7 +56,7 @@ console.log(keyPressed);
 	}
 	if(keyPressed == '66')
 	{
-		block_x = 700;
+		block_x = 650;
 		new_image('br.png');
         console.log("b");
 	}
